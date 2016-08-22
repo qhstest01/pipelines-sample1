@@ -10,3 +10,9 @@ jobs:
     steps:
       - IN: dv-imgtest7
         pull: false
+        
+  - name: dv-man12
+    type: manifest
+    steps:
+      - IN: dv-imgtest6
+        pull: true
