@@ -14,5 +14,5 @@ resources:
     pointer:
       sourceName: "shiphitchcock2test/docker-node-test"
     seed:
-      versionName: latest
+      versionName: qhstest
       
