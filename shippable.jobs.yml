@@ -18,7 +18,6 @@ jobs:
     steps:
       - IN: job-manifest2
       - IN: pipelines-sample1-ddc-cluster
-      - TASK: managed
-        deployMethod: upgrade
+      
 
         
