@@ -22,5 +22,5 @@ resources:
     pointer:
       sourceName: shiphitchcock2test/docker-node
     seed:
-      versionName: 
+      versionName: testpvt
       
