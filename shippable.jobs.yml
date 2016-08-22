@@ -1,0 +1,6 @@
+jobs:
+  - name: dv-man
+    type: manifest
+    steps:
+      - IN: dv-imgtest1
+        pull: false
