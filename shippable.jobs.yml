@@ -17,6 +17,7 @@ jobs:
     type: deploy
     steps:
       - IN: job-manifest2
+      - IN: job-manifest1
       - IN: pipelines-sample1-ddc-cluster
       
 
