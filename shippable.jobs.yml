@@ -1,22 +1,22 @@
 jobs:
-  - name: dv-doptions11
+  - name: job-manifest1
     type: manifest
     steps:
       - IN: pipelines-sample-do1
         pull: true
       - IN: pipelines-sample1-dv-opts
         
-  - name: dv-doptions12
+  - name: job-manifest2
     type: manifest
     steps:
       - IN: pipelines-sample1-do2
         pull: false
       - IN: pipelines-sample1-dv-opts
       
-  - name: dv-ddccluster1
+  - name: job-ddc-deploy1
     type: deploy
     steps:
-      - IN: dv-doptions11
+      - IN: job-manifest2
       - IN: pipelines-sample1-ddc-cluster
       - TASK: managed
         deployMethod: upgrade
