@@ -20,7 +20,7 @@ resources:
     type: image
     integration: ship-dock12
     pointer:
-      sourceName: #shiphitchcock2test/docker-node
-    seed:
+      sourceName: shiphitchcock2test/docker-node
+    #seed:
       versionName: pvtimage
       
