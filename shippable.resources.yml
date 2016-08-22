@@ -19,7 +19,7 @@ resources:
     type: dockerOptions
     version:
       memory: "6/12"
-      cpuShares: 256
+      cpuShares: "256"
       portMappings:
-        - "80:80"
+        - 80:80
       
