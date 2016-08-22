@@ -18,7 +18,7 @@ resources:
       
   - name: dv-imgtest3
     type: image
-    integration: ship-dock122
+    integration: ship-dock1223
     pointer:
       sourceName: shiphitchcock2test/docker-node
     seed:
