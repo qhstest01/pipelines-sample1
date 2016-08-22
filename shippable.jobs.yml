@@ -9,11 +9,8 @@ jobs:
   - name: dv-doptions2
     type: manifest
     steps:
-      - IN: dv-imgtest7
+      - IN: pipelines-sample1-do2
         pull: false
+      - IN: pipelines-sample1-dv-opts
         
-  - name: dv-doptions3
-    type: manifest
-    steps:
-      - IN: dv-imgtest6
-        pull: true
+  
