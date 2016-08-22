@@ -8,7 +8,7 @@ resources:
       versionName: latest
       
  
- - name: dv-imgtest2
+  - name: dv-imgtest2
     type: image
     integration: ship-dock12
     pointer:
