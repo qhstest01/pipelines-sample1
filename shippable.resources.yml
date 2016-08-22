@@ -1,5 +1,5 @@
 resources:
-  - name: pipelines-sample1
+  - name: pipelines-sample-do1
     type: image
     integration: ship-dock12
     pointer:
