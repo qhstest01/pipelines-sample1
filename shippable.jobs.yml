@@ -2,7 +2,7 @@ jobs:
   - name: dv-man11
     type: manifest
     steps:
-      - IN: dv-imgtest3
+      - IN: pipelines-sample1
         pull: true
         
   - name: dv-man11-pvt
