@@ -7,21 +7,19 @@ resources:
     seed:
       versionName: latest
       
- 
-  - name: dv-imgtest8
-    type: image
-    integration: ship-dock12
-    pointer:
-      sourceName:  "shiphitchcock2test/docker-node-test"
-    seed:
-      versionName: qhstest
-      
- 
-  - name: dv-imgtest9
+  - name: pipelines-sample1-do2
     type: image
     integration: ship-dock12
     pointer:
       sourceName: "shiphitchcock2test/docker-node"
     seed:
       versionName: qhstest
+      
+  - name: pipelines-sample1-dv-opts
+    type: dockerOptions
+    version:
+      memory: 64
+      cpuShares: 256
+      portMappings:
+        - "80:80"
       
