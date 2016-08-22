@@ -2,7 +2,7 @@ resources:
   - name: dv-imgtest1
     type: image
     integration: ship-dock12
-   # pointer:
+    pointer:
       sourceName: "library/nginx"
     seed:
       versionName: latest
