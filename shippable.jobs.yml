@@ -2,7 +2,7 @@ jobs:
   - name: dv-man1
     type: manifest
     steps:
-      - IN: dv-imgtest2
+      - IN: dv-imgtest4
         pull: true
         
   - name: dv-man1-pvt
