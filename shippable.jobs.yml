@@ -13,7 +13,7 @@ jobs:
         pull: false
       - IN: pipelines-sample1-dv-opts
       
-  - name: dv-ecscluster1
+  - name: dv-ddccluster1
     type: deploy
     steps:
       - IN: dv-doptions11
