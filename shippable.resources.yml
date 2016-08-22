@@ -17,7 +17,7 @@ resources:
       
   - name: pipelines-sample1-dv-opts
     type: dockerOptions
-    VERSION:
+  #  version:
       memory: 60
       cpuShares: 256
       portMappings:
