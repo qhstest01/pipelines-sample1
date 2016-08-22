@@ -11,14 +11,14 @@ resources:
   - name: dv-imgtest2
     type: image
     integration: ship-dock12
-    pointer:
+   # pointer:
       sourceName: "shiphitchcock2test/docker-node-test"
     seed:
       versionName: qhstest
       
   - name: dv-imgtest3
     type: image
-    integration: ship-dock1222
+    integration: ship-dock12
     pointer:
       sourceName: shiphitchcock2test/docker-node
     seed:
