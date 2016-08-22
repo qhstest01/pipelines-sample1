@@ -16,7 +16,7 @@ resources:
     seed:
       versionName: qhstest
       
-  - name: dv-imgtest3
+ # - name: dv-imgtest3
     type: images
     integration: ship-dock12
     pointer:
