@@ -12,4 +12,13 @@ jobs:
       - IN: pipelines-sample1-do2
         pull: false
       - IN: pipelines-sample1-dv-opts
+      
+  - name: dv-ecscluster1
+    type: deploy
+    steps:
+      - IN: dv-doptions11
+      - IN: pipelines-sample1-env-cluster
+      - TASK: managed
+        deployMethod: upgrade
+
         
