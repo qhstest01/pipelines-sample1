@@ -16,8 +16,8 @@ resources:
       versionName: qhstest
       
   - name: pipelines-sample1-dv-opts
-    type: #DockerOptions
-    version:
+    type: dockerOptions
+    versions:
       memory: 60
       cpuShares: 256
       portMappings:
