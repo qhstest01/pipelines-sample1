@@ -1,5 +1,5 @@
 resources:
-  - name: dv-imgtest1
+  - name: pipelines-sample1
     type: image
     integration: ship-dock12
     pointer:
@@ -12,8 +12,7 @@ resources:
     type: image
     integration: ship-dock12
     pointer:
-      sourceName: 
-           - "shiphitchcock2test/docker-node-test"
+      sourceName:  "shiphitchcock2test/docker-node-test"
     seed:
       versionName: qhstest
       
