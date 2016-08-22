@@ -7,11 +7,11 @@ resources:
     seed:
       versionName: latest
       
-  - name: pipelines-sample1-do2
+  - name: pipelines-sample1-do3
     type: image
     integration: ship-dock12
     pointer:
-      sourceName: "shiphitchcock2test/docker-node"
+      sourceName: "shiphitchcock2test/docker-node-test"
     seed:
       versionName: qhstest
       
