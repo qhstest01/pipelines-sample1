@@ -24,11 +24,11 @@ resources:
     seed:
       versionName: test-pvt!@
       
-  - name: dv-imgtest5
+  - name: dv-imgtest7
     type: image
     integration: ship-dock12
     pointer:
-      sourceName: "shipimg/www50"
+      sourceName: "shiphitchcock2test/docker-node"
     seed:
       versionName: qhstest
       
