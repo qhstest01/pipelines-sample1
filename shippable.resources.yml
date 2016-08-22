@@ -26,11 +26,10 @@ resources:
   - name: pipelines-sample1-dv-opts
     type: dockerOptions
     version:
-      memory:  "6"
-       
+      memory:  "10"
       cpuShares: "256"
       portMappings:
-        - 80:80
+        - "80:80"
         
   - name: pipelines-sample1-env-cluster
     type: cluster
