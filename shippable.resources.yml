@@ -15,6 +15,14 @@ resources:
     seed:
       versionName: qhstest
       
+  - name: pipelines-sample1-do4
+    type: image
+    integration: ship-dock12
+    pointer:
+      sourceName: "shippabledocker/pipelinev2"
+    seed:
+      versionName: "deploy.1"
+      
   - name: pipelines-sample1-dv-opts
     type: dockerOptions
     version:
