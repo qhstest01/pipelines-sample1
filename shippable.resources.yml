@@ -16,13 +16,7 @@ resources:
     seed:
       versionName: qhstest
       
-  - name: dv-imgtest7
-    type: image
-    integration: ship-dock12
-    sourceName: shiphitchcock2test/docker-node
-    seed:
-      versionName: test-pvt!@
-      
+ 
   - name: dv-imgtest9
     type: image
     integration: ship-dock12
