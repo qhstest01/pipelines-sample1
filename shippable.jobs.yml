@@ -1,0 +1,8 @@
+resources:
+  - name: dv-test1
+    type: image
+    integration: ship-dock12
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
