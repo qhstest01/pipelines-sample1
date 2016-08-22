@@ -6,3 +6,13 @@ resources:
       sourceName: "library/nginx"
     seed:
       versionName: latest
+      
+ 
+ - name: dv-imgtest2
+    type: image
+    integration: ship-dock12
+    pointer:
+      sourceName: "shiphitchcock2test/docker-node-test"
+    seed:
+      versionName: latest
+      
