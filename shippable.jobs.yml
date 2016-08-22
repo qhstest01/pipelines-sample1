@@ -9,7 +9,7 @@ jobs:
   - name: job-manifest2
     type: manifest
     steps:
-      - IN: pipelines-sample1-do3
+      - IN: pipelines-sample1-do4
         pull: false
       - IN: pipelines-sample1-dv-opts
       
