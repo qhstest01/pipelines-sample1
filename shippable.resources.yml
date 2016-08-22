@@ -19,12 +19,11 @@ resources:
   - name: dv-imgtest7
     type: image
     integration: ship-dock12
-    pointer:
       sourceName: shiphitchcock2test/docker-node
     seed:
       versionName: test-pvt!@
       
-  - name: dv-imgtest7
+  - name: dv-imgtest9
     type: image
     integration: ship-dock12
     pointer:
