@@ -1,6 +1,6 @@
 jobs:
-  - name: dv-man
+  - name: dv-man1
     type: manifest
     steps:
-      - IN: dv-imgtest1
-        pull: false
+      - IN: dv-imgtest2
+        pull: true
