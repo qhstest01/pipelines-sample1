@@ -13,7 +13,7 @@ jobs:
         pull: false
       - IN: pipelines-sample1-dv-opts
       
-  - name: job-ddc-deploy1
+  - name: job-ddc-deploy-test1
     type: deploy
     steps:
       - IN: job-manifest2
