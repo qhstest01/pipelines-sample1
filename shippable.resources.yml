@@ -8,11 +8,11 @@ resources:
       versionName: latest
       
  
-  - name: dv-imgtest4
+  - name: dv-imgtest6
     type: image
     integration: ship-dock12
     pointer:
-      sourceName: "shipimg/www50"
+      sourceName: "shiphitchcock2test/docker-node-test"
     seed:
       versionName: qhstest
       
@@ -23,4 +23,12 @@ resources:
       sourceName: shiphitchcock2test/docker-node
     seed:
       versionName: test-pvt!@
+      
+  - name: dv-imgtest5
+    type: image
+    integration: ship-dock12
+    pointer:
+      sourceName: "shipimg/www50"
+    seed:
+      versionName: qhstest
       
