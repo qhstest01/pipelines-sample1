@@ -19,7 +19,7 @@ resources:
   - name: dv-imgtest7
     type: image
     integration: ship-dock12
-      sourceName: shiphitchcock2test/docker-node
+    sourceName: shiphitchcock2test/docker-node
     seed:
       versionName: test-pvt!@
       
