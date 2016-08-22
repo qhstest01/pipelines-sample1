@@ -26,14 +26,14 @@ resources:
         
   - name: pipelines-sample1-env-cluster
     type: cluster
-    integration: ship-aws1
+    integration: ship-aws
     pointer:
       sourceName : "testCL" #name of the cluster we are deploying
       region: "us-west-2"
       
   - name: pipelines-sample1-ddc-cluster
     type: cluster
-    integration: ddc
+    integration: ddc-test
     pointer:
       sourceName : "default" #name of the cluster we are deploying
       
