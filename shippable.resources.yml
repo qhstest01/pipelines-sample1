@@ -20,6 +20,7 @@ resources:
     version:
       memory: 
         - "6"
+        - "50"
       cpuShares: "256"
       portMappings:
         - 80:80
