@@ -19,8 +19,8 @@ resources:
   - name: dv-imgtest3
     type: image
     integration: ship-dock12
-   # pointer:
-      sourceName: shiphitchcock2test/docker-node
+    pointer:
+      sourceName: #shiphitchcock2test/docker-node
     seed:
       versionName: pvtimage
       
