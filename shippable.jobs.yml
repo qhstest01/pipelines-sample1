@@ -17,7 +17,7 @@ jobs:
     type: deploy
     steps:
       - IN: dv-doptions11
-      - IN: pipelines-sample1-env-cluster
+      - IN: pipelines-sample1-ddc-cluster
       - TASK: managed
         deployMethod: upgrade
 
