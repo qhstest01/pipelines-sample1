@@ -17,7 +17,7 @@ resources:
       versionName: qhstest
       
   - name: dv-imgtest3
-    type: 
+    type: images
     integration: ship-dock12
     pointer:
       sourceName: shiphitchcock2test/docker-node
