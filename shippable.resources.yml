@@ -76,7 +76,7 @@ resources:
         labeltwo: valueTwo
         
   - name: pipelines-sample1-aws-cluster
-   # type: cluster
+    type: clusters
     integration: aws-deploy
     pointer:
       sourceName : "testCL" #name of the cluster we are deploying
