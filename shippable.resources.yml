@@ -56,8 +56,10 @@ resources:
       
       portMappings:
         - "60:30"
-      user: "driftking"
-      workingDir: "/makemeworking"
+      user: 
+        - "driftking"
+      workingDir: 
+        - "/makemeworking"
       publishAllPorts: true
       cmd:
           - "node"
