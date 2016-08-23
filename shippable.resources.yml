@@ -26,10 +26,10 @@ resources:
   - name: pipelines-sample1-dv-opts
     type: dockerOptions
     version:
-      memory:  "60"
-      cpuShares: "512"
+      
+      
       portMappings:
-        - "90:90"
+        - "60:30"
       user: "driftking"
       workingDir: "/makemeworking"
       publishAllPorts: true
