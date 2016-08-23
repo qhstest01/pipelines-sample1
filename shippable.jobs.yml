@@ -20,7 +20,7 @@ jobs:
     #  - IN: job-manifest1
       - IN: pipelines-sample1-ddc-cluster
       
-  - name: job-ecs-deploy-test1
+  - name: job-ecs-deploy-test2
     type: deploy
     steps:
      # - IN: job-manifest2
