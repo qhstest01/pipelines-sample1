@@ -4,7 +4,7 @@ jobs:
     steps:
       - IN: pipelines-sample-do1
         pull: true
-      - IN: pipelines-sample1-dv-opts
+     # - IN: pipelines-sample1-dv-opts
         
   - name: job-manifest2
     type: manifest
