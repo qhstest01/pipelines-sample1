@@ -30,6 +30,24 @@ resources:
       cpuShares: "512"
       portMappings:
         - "90:90"
+       user: "driftking"
+      workingDir: "/makemeworking"
+      publishAllPorts: true
+      cmd:
+          - "node"
+          - "job.js"
+      dnsServers:
+          - "127.0.8.1"
+      dnsSearch:
+          - "127.8.0.1"
+      logConfig:
+        type: "json-file"
+        options:
+          max-size: 50m
+      privileged: true
+      labels:
+        labelone: valueOne
+        labeltwo: valueTwo
         
   - name: pipelines-sample1-aws-cluster
     type: cluster
