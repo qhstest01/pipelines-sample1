@@ -30,7 +30,7 @@ resources:
       cpuShares: "512"
       portMappings:
         - "90:90"
-       user: "driftking"
+      user: "driftking"
       workingDir: "/makemeworking"
       publishAllPorts: true
       cmd:
