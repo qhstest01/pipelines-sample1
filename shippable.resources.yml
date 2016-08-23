@@ -29,6 +29,7 @@ resources:
     version:
       memory: 100
       cpuShares: 16
+      
       user: 
          - "driftking1"
       workingDir: 
@@ -45,11 +46,20 @@ resources:
         type: 
           - "json-file"
         options:
-          max-size: 50m
+          max-size: 80m
       privileged: true
       labels:
         labelone: valueOne
         labeltwo: valueTwo
+      entryPoint:
+          - '/bin/sh'
+          - './entrypoint2.sh'
+       links:
+          - "job-ecs-deploy-test8-job-manifest3-ca847467-b9ee-4490-9ce4-c209d1a54f79"
+       volumes:
+          - "s1"
+          - "s2"
+
       
       
   - name: pipelines-sample1-dv-opts
