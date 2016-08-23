@@ -27,7 +27,7 @@ resources:
   - name: pipelines-sample1-ecs-opts
     type: dockerOptions
     version:
-      memory: 100
+      memory: 50
       cpuShares: 16
       
       user: 
