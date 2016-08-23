@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
       - IN: pipelines-sample-do1
-      - IN: pipelines-sample1-ecs-opts
+   #   - IN: pipelines-sample1-ecs-opts
         pull: true
       - IN: dep-trigger1
      
@@ -24,7 +24,7 @@ jobs:
     #  - IN: job-manifest1
       - IN: pipelines-sample1-ddc-cluster
       
-  - name: job-ecs-deploy-test6
+  - name: job-ecs-deploy-test7
     type: deploy
     steps:
      
