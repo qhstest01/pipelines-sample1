@@ -86,5 +86,5 @@ resources:
     type: cluster
     integration: ddc-deploy
     pointer:
-      sourceName : "default" #name of the cluster we are deploying
+     # sourceName : "default" #name of the cluster we are deploying
       
