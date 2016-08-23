@@ -75,7 +75,7 @@ resources:
         labelone: valueOne
         labeltwo: valueTwo
         
-  - name: pipelines-sample1-aws-cluster
+  - name: pipelines-sample1-aws-cluster2
     type: cluster
     integration: aws-deploy
     pointer:
