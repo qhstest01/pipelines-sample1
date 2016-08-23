@@ -79,12 +79,12 @@ resources:
     type: cluster
     integration: aws-deploy
     pointer:
-      sourceName : "aaatestCL" #name of the cluster we are deploying
+      sourceName : "testCL" #name of the cluster we are deploying
       region: "us-west-2"
       
   - name: pipelines-sample1-ddc-cluster
     type: cluster
     integration: ddc-deploy
     pointer:
-     # sourceName : "default" #name of the cluster we are deploying
+      sourceName : "default" #name of the cluster we are deploying
       
