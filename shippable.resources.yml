@@ -77,9 +77,9 @@ resources:
         
   - name: pipelines-sample1-aws-cluster
     type: cluster
-    integration: aws-deploya
+    integration: aws-deploy
     pointer:
-      sourceName : "testCL" #name of the cluster we are deploying
+   #   sourceName : "testCL" #name of the cluster we are deploying
       region: "us-west-2"
       
   - name: pipelines-sample1-ddc-cluster
