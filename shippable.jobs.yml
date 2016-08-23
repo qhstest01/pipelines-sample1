@@ -4,7 +4,7 @@ jobs:
     steps:
       - IN: pipelines-sample-do1
         pull: true
-     # - IN: pipelines-sample1-dv-opts
+     
         
   - name: job-manifest2
     type: manifest
@@ -20,10 +20,10 @@ jobs:
     #  - IN: job-manifest1
       - IN: pipelines-sample1-ddc-cluster
       
-  - name: job-ecs-deploy-test3
+  - name: job-ecs-deploy-test4
     type: deploy
     steps:
-     # - IN: job-manifest2
+     
       - IN: job-manifest1
       - IN: pipelines-sample1-aws-cluster
 
