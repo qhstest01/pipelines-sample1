@@ -1,5 +1,5 @@
 jobs:
-  - name: job-manifest1
+  - name: job-manifest3
     type: manifest
     steps:
       - IN: pipelines-sample-do1
@@ -28,7 +28,7 @@ jobs:
     type: deploy
     steps:
      
-      - IN: job-manifest1
+      - IN: job-manifest3
       - IN: pipelines-sample1-aws-cluster
       - TASK: managed
         deployMethod: upgrade
