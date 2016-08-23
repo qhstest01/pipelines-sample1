@@ -29,8 +29,10 @@ resources:
     version:
       memory: 100
       cpuShares: 16
-      user: "driftking1"
-      workingDir: "/makemeworking1"
+      user: 
+         - "driftking1"
+      workingDir: 
+         - "/makemeworking1"
       publishAllPorts: true
       cmd:
           - "node"
@@ -40,7 +42,8 @@ resources:
       dnsSearch:
           - "127.8.0.1"
       logConfig:
-        type: "json-file"
+        type: 
+          - "json-file"
         options:
           max-size: 50m
       privileged: true
