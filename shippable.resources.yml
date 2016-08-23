@@ -54,8 +54,7 @@ resources:
       entryPoint:
           - '/bin/sh'
           - './entrypoint2.sh'
-      links:
-          - "plv2-manifest8redis_0_0_055d5014-109c-4c84-9bbe-3009a523972f:testenv"
+      
       volumes:
           - "s1"
           - "s2"
