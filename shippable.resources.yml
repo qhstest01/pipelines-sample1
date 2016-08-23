@@ -54,9 +54,9 @@ resources:
       entryPoint:
           - '/bin/sh'
           - './entrypoint2.sh'
-       links:
+      links:
           - "job-ecs-deploy-test8-job-manifest3-ca847467-b9ee-4490-9ce4-c209d1a54f79"
-       volumes:
+      volumes:
           - "s1"
           - "s2"
 
