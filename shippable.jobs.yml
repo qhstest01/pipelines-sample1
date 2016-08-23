@@ -4,6 +4,7 @@ jobs:
     steps:
       - IN: pipelines-sample-do1
         pull: true
+      - IN: dep-trigger1
      
         
   - name: job-manifest2
@@ -12,6 +13,8 @@ jobs:
       - IN: pipelines-sample1-do4
         pull: false
       - IN: pipelines-sample1-dv-opts
+      - IN: dep-trigger1
+      
       
   - name: job-ddc-deploy-test2
     type: deploy
