@@ -1,5 +1,5 @@
 jobs:
-  - name: job-testingvr-1
+  - name: job-testingvr1
     type: manifest
     steps:
       - IN: testing-img1
@@ -8,7 +8,7 @@ jobs:
       - IN: testing-trigger2
       
   
-  - name: job-testingvr-2
+  - name: job-testingvr2
     type: manifest
     steps:
       - IN: testing-img3
@@ -21,15 +21,15 @@ jobs:
     type: deploy
     steps:
      # - IN: job-manifest2
-      - IN: job-testingvr-2
+      - IN: job-testingvr1
       - IN: testing-ddc-cluster
       
   - name: job-ecs-deploy-testing1
     type: deploy
     steps:
      
-      - IN: job-testingvr-2
-      - IN: testing-ecs-opts1
+      - IN: job-testingvr2
+      #- IN: testing-ecs-opts1
       - IN: testing-aws-cluster2
       - TASK: managed
         deployMethod: upgrade
