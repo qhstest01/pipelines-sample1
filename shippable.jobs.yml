@@ -42,7 +42,7 @@ jobs:
       - IN: job-manifest5
       - IN: pipelines-sample1-ddc-cluster
       
-  - name: job-ecs-deploy-test11
+  - name: job-ecs-deploy-test12
     type: deploy
     steps:
      
