@@ -18,14 +18,14 @@ jobs:
       - IN: dep-trigger1
       
       
-  - name: job-ddc-deploy-test2
+  - name: job-ddc-deploy-test3
     type: deploy
     steps:
      # - IN: job-manifest2
       - IN: job-manifest4
       - IN: pipelines-sample1-ddc-cluster
       
-  - name: job-ecs-deploy-test8
+  - name: job-ecs-deploy-test9
     type: deploy
     steps:
      
