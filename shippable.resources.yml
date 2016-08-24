@@ -14,6 +14,14 @@ resources:
       sourceName: "shipimg/api50"
     seed:
       versionName: latest
+  
+  - name: pipelines-sample-invalid-img2
+    type: image
+    integration: ship-dock12
+    pointer:
+      sourceName: "testing/invalid-image"
+    seed:
+      versionName: latest
       
   - name: pipelines-sample1-do3
     type: image
