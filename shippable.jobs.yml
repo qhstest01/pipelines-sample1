@@ -1,65 +1,37 @@
 jobs:
-  - name: job-manifest11
+  - name: job-testingvr-1
     type: manifest
     steps:
-      - IN: pipelines-sample-do1
-      - IN: pipelines-sample1-ecs-opts
+      - IN: testing-img1
+      - IN: testing-ecs-opts1
         pull: true
       - IN: dep-trigger1
       
-  - name: job-manifest5
+  
+  - name: job-testing2
     type: manifest
     steps:
-     # - IN: pipelines-sample-do1
-      - IN: pipelines-sample-invalid-img1
-      #- IN: pipelines-sample1-ecs-opts
-        pull: true
-      - IN: dep-trigger1
-     
-  - name: job-manifest6
-    type: manifest
-    steps:
-     # - IN: pipelines-sample-do1
-      - IN: pipelines-sample-invalid-img2
-      #- IN: pipelines-sample1-ecs-opts
-        pull: true
-      - IN: dep-trigger1
-     
-        
-  - name: job-manifest2
-    type: manifest
-    steps:
-      - IN: pipelines-sample1-do4
+      - IN: testing-img3
         pull: false
-      - IN: pipelines-sample1-dv-opts
+      - IN: testing-dv-opts
       - IN: dep-trigger1
       
       
-  - name: job-ddc-deploy-test4
+  - name: job-ddc-deploy-testing1
     type: deploy
     steps:
      # - IN: job-manifest2
-      - IN: job-manifest5
-      - IN: pipelines-sample1-ddc-cluster
+      - IN: job-testing2
+      - IN: testing-ddc-cluster
       
-  - name: job-ecs-deploy-test12
+  - name: job-ecs-deploy-testing1
     type: deploy
     steps:
      
-      - IN: job-manifest6
-      #- IN: pipelines-sample1-ecs-opts
-      - IN: pipelines-sample1-aws-cluster2
+      - IN: job-testing2
+      - IN: testing-ecs-opts1
+      - IN: testing-aws-cluster2
       - TASK: managed
         deployMethod: upgrade
         
-  - name: job-ecs-deploy-test13
-    type: deploy
-    steps:
-     
-      - IN: job-manifest11
-      - IN: pipelines-sample1-ecs-opts
-      - IN: pipelines-sample1-aws-cluster2
-      - TASK: managed
-        deployMethod: upgrade
-
-        
+  
