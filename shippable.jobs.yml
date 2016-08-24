@@ -1,5 +1,5 @@
 jobs:
-  - name: job-manifest3
+  - name: job-manifest4
     type: manifest
     steps:
      # - IN: pipelines-sample-do1
@@ -21,15 +21,15 @@ jobs:
   - name: job-ddc-deploy-test2
     type: deploy
     steps:
-      - IN: job-manifest2
-      - IN: job-manifest3
+     $ - IN: job-manifest2
+      - IN: job-manifest4
       - IN: pipelines-sample1-ddc-cluster
       
   - name: job-ecs-deploy-test8
     type: deploy
     steps:
      
-      - IN: job-manifest3
+      - IN: job-manifest4
       - IN: pipelines-sample1-ecs-opts
       - IN: pipelines-sample1-aws-cluster2
       - TASK: managed
