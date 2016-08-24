@@ -47,7 +47,7 @@ jobs:
     steps:
      
       - IN: job-manifest6
-      - IN: pipelines-sample1-ecs-opts
+      #- IN: pipelines-sample1-ecs-opts
       - IN: pipelines-sample1-aws-cluster2
       - TASK: managed
         deployMethod: upgrade
