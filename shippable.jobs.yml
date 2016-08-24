@@ -2,6 +2,14 @@ jobs:
   - name: job-manifest4
     type: manifest
     steps:
+      - IN: pipelines-sample-do1
+      - IN: pipelines-sample1-ecs-opts
+        pull: true
+      - IN: dep-trigger1
+      
+  - name: job-manifest5
+    type: manifest
+    steps:
      # - IN: pipelines-sample-do1
       - IN: pipelines-sample-invalid-img1
       #- IN: pipelines-sample1-ecs-opts
@@ -18,18 +26,18 @@ jobs:
       - IN: dep-trigger1
       
       
-  - name: job-ddc-deploy-test3
+  - name: job-ddc-deploy-test4
     type: deploy
     steps:
      # - IN: job-manifest2
-      - IN: job-manifest4
+      - IN: job-manifest5
       - IN: pipelines-sample1-ddc-cluster
       
-  - name: job-ecs-deploy-test9
+  - name: job-ecs-deploy-test10
     type: deploy
     steps:
      
-      - IN: job-manifest4
+      - IN: job-manifest5
       - IN: pipelines-sample1-ecs-opts
       - IN: pipelines-sample1-aws-cluster2
       - TASK: managed
