@@ -1,5 +1,5 @@
 triggers:
-   - name: dep-trigger1
+   - name: testing-trigger2
      type: trigger
      version:
        counter: 3
