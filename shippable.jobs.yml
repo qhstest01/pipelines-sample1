@@ -3,7 +3,7 @@ jobs:
     type: manifest
     steps:
      # - IN: pipelines-sample-do1
-      - IN: pipelines-sample-invalid-img
+      - IN: pipelines-sample-invalid-img1
       #- IN: pipelines-sample1-ecs-opts
         pull: true
       - IN: dep-trigger1
