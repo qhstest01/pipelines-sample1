@@ -62,9 +62,7 @@ resources:
           - "s1"
           - "s2"
           
-     # links:
-      #   - containerNameOne:oneAlias
-       #  - containerNameTwo:twoAlias
+    
 
       
       
