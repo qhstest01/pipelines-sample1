@@ -21,7 +21,7 @@ jobs:
   - name: job-ddc-deploy-test2
     type: deploy
     steps:
-     $ - IN: job-manifest2
+     # - IN: job-manifest2
       - IN: job-manifest4
       - IN: pipelines-sample1-ddc-cluster
       
