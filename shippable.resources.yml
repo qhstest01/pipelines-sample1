@@ -43,7 +43,10 @@ resources:
   - name: pipelines-sample1-ecs-opts
     type: dockerOptions
     version:
-      memory: 50
+      memory: 
+         - 50
+         - 60
+      
       cpuShares: 16
       
       user: 
@@ -75,6 +78,10 @@ resources:
       volumes:
           - "s1"
           - "s2"
+          
+     # links:
+      #   - containerNameOne:oneAlias
+       #  - containerNameTwo:twoAlias
 
       
       
@@ -102,7 +109,9 @@ resources:
            - "json-file"
         options:
           max-size: 50m
-      privileged: true
+      privileged: false
+      links:
+         - 
       labels:
         labelone: valueOne
         labeltwo: valueTwo
