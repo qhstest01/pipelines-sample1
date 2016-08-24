@@ -8,27 +8,27 @@ jobs:
       - IN: testing-trigger2
       
   
-  - name: job-testing2
+  - name: job-testingvr-2
     type: manifest
     steps:
       - IN: testing-img3
         pull: false
       - IN: testing-dv-opts2
-      - IN: dep-trigger1
+      - IN: testing-trigger2
       
       
   - name: job-ddc-deploy-testing1
     type: deploy
     steps:
      # - IN: job-manifest2
-      - IN: job-testing2
+      - IN: job-testingvr-2
       - IN: testing-ddc-cluster
       
   - name: job-ecs-deploy-testing1
     type: deploy
     steps:
      
-      - IN: job-testing2
+      - IN: job-testingvr-2
       - IN: testing-ecs-opts1
       - IN: testing-aws-cluster2
       - TASK: managed
