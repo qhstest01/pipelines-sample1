@@ -7,11 +7,11 @@ resources:
     seed:
       versionName: latest
       
-  - name: pipelines-sample-invalid-img
+  - name: pipelines-sample-invalid-img1
     type: image
     integration: ship-dock12
     pointer:
-      sourceName: "library/nginx-test"
+      sourceName: "shipimg/api50"
     seed:
       versionName: latest
       
