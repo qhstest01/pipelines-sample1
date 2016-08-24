@@ -1,5 +1,5 @@
 jobs:
-  - name: job-manifest4
+  - name: job-manifest11
     type: manifest
     steps:
       - IN: pipelines-sample-do1
@@ -56,7 +56,7 @@ jobs:
     type: deploy
     steps:
      
-      - IN: job-manifest4
+      - IN: job-manifest11
       - IN: pipelines-sample1-ecs-opts
       - IN: pipelines-sample1-aws-cluster2
       - TASK: managed
