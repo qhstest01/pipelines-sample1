@@ -2,7 +2,7 @@ jobs:
   - name: job-manifest3
     type: manifest
     steps:
-      - IN: pipelines-sample-do1
+     # - IN: pipelines-sample-do1
       - IN: pipelines-sample-invalid-img
       #- IN: pipelines-sample1-ecs-opts
         pull: true
