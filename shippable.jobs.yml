@@ -3,6 +3,7 @@ jobs:
     type: manifest
     steps:
       - IN: pipelines-sample-do1
+      - IN: pipelines-sample-invalid-img
       #- IN: pipelines-sample1-ecs-opts
         pull: true
       - IN: dep-trigger1
@@ -21,7 +22,7 @@ jobs:
     type: deploy
     steps:
       - IN: job-manifest2
-    #  - IN: job-manifest1
+      - IN: job-manifest3
       - IN: pipelines-sample1-ddc-cluster
       
   - name: job-ecs-deploy-test8
