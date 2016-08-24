@@ -5,7 +5,7 @@ jobs:
       - IN: testing-img1
       - IN: testing-ecs-opts1
         pull: true
-      - IN: dep-trigger1
+      - IN: testing-trigger2
       
   
   - name: job-testing2
