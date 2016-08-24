@@ -117,6 +117,6 @@ resources:
   - name: pipelines-sample1-ddc-cluster
     type: cluster
     integration: ddc-deploy
-    pointer:
-      sourceName : "default" #name of the cluster we are deploying
+    #pointer:
+    sourceName : "default" #name of the cluster we are deploying
       
